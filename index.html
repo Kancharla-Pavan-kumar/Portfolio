@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rishi | Portfolio</title>
+  
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div id="loader" aria-hidden="true">
+    <h1 class="loader-text">Portfolio</h1>
+  </div>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <h2 class="logo" aria-label="Home">R</h2>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-left">
+      <p class="role hero-anim delay1">JAVA FULL-STACK DEVELOPER | SPRING BOOT • MICROSERVICES • REST APIs</p>
+      <h1 class="hero-anim delay2">Hello</h1>
+      <p class="hero-anim delay3" id="typing">
+        I'm K Rishi Chowdary — building enterprise-level backend systems,
+        distributed microservices architectures, and scalable RESTful applications.
+      </p>
+    </div>
+    <div class="hero-right">
+      <img src="assets/images/profile.jpeg" alt="K Rishi Chowdary - Profile Photo">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <div class="about-card">
+      <ul class="about-list">
+        <li>Hi, I’m <b>K Rishi Chowdary</b> — an aspiring Full-Stack Developer passionate about building scalable real-world web applications.</li>
+        <li>Developing strong foundations in <b>Java, Data Structures & Algorithms, databases, and modern web technologies</b>.</li>
+        <li>Hands-on experience building backend services using <b>Spring Boot, REST APIs, SQL/NoSQL databases</b>.</li>
+        <li>Interested in complete system design — from responsive front-end interfaces to secure backend architectures.</li>
+        <li>Regularly solving coding challenges and building real-world projects to strengthen analytical thinking.</li>
+        <li>Focused on performance-oriented systems, clean architecture, and enterprise-level application design.</li>
+        <li>Actively preparing for internships where I can collaborate with experienced developers and grow into a professional software engineer.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section reveal">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-group">
+        <h3>Backend</h3>
+        <ul>
+          <li><i class="fa-brands fa-java" aria-hidden="true"></i> Java</li>
+          <li><i class="fa-solid fa-leaf" aria-hidden="true"></i> Spring Boot</li>
+          <li><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Microservices</li>
+          <li><i class="fa-solid fa-code" aria-hidden="true"></i> REST APIs</li>
+          <li><i class="fa-solid fa-database" aria-hidden="true"></i> Hibernate / JPA</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Frontend</h3>
+        <ul>
+          <li><i class="fa-brands fa-html5" aria-hidden="true"></i> HTML</li>
+          <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i> CSS</li>
+          <li><i class="fa-brands fa-js" aria-hidden="true"></i> JavaScript</li>
+          <li><i class="fa-brands fa-react" aria-hidden="true"></i> React</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Database</h3>
+        <ul>
+          <li><i class="fa-solid fa-database" aria-hidden="true"></i> MySQL</li>
+          <li><i class="fa-solid fa-database" aria-hidden="true"></i> PostgreSQL</li>
+        </ul>
+      </div>
+      <div class="skill-group">
+        <h3>Tools</h3>
+        <ul>
+          <li><i class="fa-brands fa-aws" aria-hidden="true"></i> AWS</li>
+          <li><i class="fa-brands fa-docker" aria-hidden="true"></i> Docker</li>
+          <li><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</li>
+          <li><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Postman</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section dark reveal">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Password Generator</h3>
+        <p>Customizable password generator with strength indicator and copy feature.</p>
+        <a href="https://immortal4728.github.io/Password-Generator/" target="_blank" rel="noopener">View Project →</a>
+      </div>
+      <div class="project-card">
+        <h3><i class="fa-solid fa-chess-king" aria-hidden="true"></i> Chess Game</h3>
+        <p>Interactive browser chess board with complete gameplay logic, piece movement validation, and smooth UI interactions.</p>
+        <a href="https://immortal4728.github.io/chess/" target="_blank" rel="noopener">View Project →</a>
+      </div>
+      <div class="project-card">
+        <h3><i class="fa-solid fa-bolt" aria-hidden="true"></i> Ben10 Animation UI</h3>
+        <p>Animation-rich themed React UI project featuring transitions, character animations, and interactive visual effects.</p>
+        <a href="https://immortal4728.github.io/Ben10/" target="_blank" rel="noopener">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Project -->
+  <section id="portfolio" class="section portfolio-section reveal">
+    <h2>Portfolio Project</h2>
+    <div class="portfolio-card">
+      <h3>Farm-to-Community Direct Vegetable Marketplace</h3>
+      <span class="project-status">Currently Developing</span>
+      <p class="portfolio-desc">
+        A microservices-based enterprise marketplace platform connecting farmers directly
+        with customers and apartment communities. The system eliminates middle brokers,
+        ensures transparent pricing, enables bulk ordering for communities, and supports
+        scalable distributed system deployment using independent microservices.
+      </p>
+      <p class="services-count">8 Core Microservices • API Gateway • Service Registry</p>
+      <div class="portfolio-highlights">
+        <div><i class="fa-solid fa-network-wired" aria-hidden="true"></i> Microservices Architecture</div>
+        <div><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Secure JWT Authentication</div>
+        <div><i class="fa-solid fa-database" aria-hidden="true"></i> Independent Service Databases</div>
+        <div><i class="fa-solid fa-cloud" aria-hidden="true"></i> Cloud Ready Deployment</div>
+      </div>
+      <div class="portfolio-features">
+        <div>
+          <h4>Core Objectives</h4>
+          <ul>
+            <li>Direct farmer-to-customer marketplace</li>
+            <li>Bulk community ordering system</li>
+            <li>Transparent pricing and transaction flow</li>
+            <li>Scalable distributed microservices architecture</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Technology Stack</h4>
+          <ul>
+            <li>Java Spring Boot Microservices</li>
+            <li>Spring Cloud Gateway & Eureka Registry</li>
+            <li>React Frontend</li>
+            <li>PostgreSQL / MySQL Databases</li>
+            <li>JWT Authentication & Secure APIs</li>
+          </ul>
+        </div>
+      </div>
+      <a href="http://localhost:4200" class="portfolio-btn">View Full Project Architecture →</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section reveal">
+    <h2>Contact Me</h2>
+    <p class="contact-desc">
+      I am a student developer passionate about building practical software projects and continuously improving my technical skills.
+      I am always open to learning opportunities, collaborations, internships, and meaningful technical discussions.
+    </p>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+        <h4>Phone</h4>
+        <a href="tel:+918328465473">+91 8328465473</a>
+      </div>
+      <div class="contact-card">
+        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        <h4>Email</h4>
+        <a href="mailto:rishichowdary2099@gmail.com">rishichowdary2099@gmail.com</a>
+      </div>
+      <div class="contact-card">
+        <i class="fa-brands fa-github" aria-hidden="true"></i>
+        <h4>GitHub</h4>
+        <a href="https://github.com/Immortal4728" target="_blank" rel="noopener">github.com/Immortal4728</a>
+      </div>
+      <div class="contact-card">
+        <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+        <h4>LinkedIn</h4>
+        <a href="https://linkedin.com/in/immortal4728" target="_blank" rel="noopener">linkedin.com/in/immortal4728</a>
+      </div>
+    </div>
+    <p class="contact-footer">
+      I typically respond within 24 hours and look forward to connecting with you.
+    </p>
+  </section>
+
+  <!-- Resume Button -->
+  <a href="assets/docs/resume.pdf" class="resume-float" target="_blank" rel="noopener" aria-label="Download Resume">
+    <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> Resume
+  </a>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

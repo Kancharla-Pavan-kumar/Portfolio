@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login - InsForge Auth</title>
+  <style>
+    body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f4f9; }
+    .auth-container { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+    input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+    button { width: 100%; padding: 10px; margin: 5px 0; border: none; border-radius: 4px; cursor: pointer; color: white; font-weight: bold; }
+    #login-btn { background-color: #007bff; }
+    #signup-btn { background-color: #28a745; }
+    #google-login-btn { background-color: #4285F4; }
+  </style>
+</head>
+<body>
+  <div class="auth-container">
+    <h2>Welcome</h2>
+    <input type="email" id="email" placeholder="Email address" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button id="login-btn">Log In</button>
+    <button id="signup-btn">Sign Up</button>
+    <hr style="margin: 15px 0; border-top: 1px solid #eee;">
+    <button id="google-login-btn">Log In with Google</button>
+  </div>
+
+  <script type="module">
+    import { login, signup, loginWithGoogle } from './auth.js';
+
+    document.getElementById('login-btn').addEventListener('click', () => {
+      login(document.getElementById('email').value, document.getElementById('password').value);
+    });
+
+    document.getElementById('signup-btn').addEventListener('click', () => {
+      signup(document.getElementById('email').value, document.getElementById('password').value);
+    });
+
+    document.getElementById('google-login-btn').addEventListener('click', () => {
+      loginWithGoogle();
+    });
+  </script>
+</body>
+</html>
